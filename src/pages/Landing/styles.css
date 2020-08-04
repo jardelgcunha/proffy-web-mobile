@@ -163,4 +163,10 @@
   .buttons-container {
     margin: 1.5rem 0;
   }
+  .buttons-container a img {
+    margin-right: 1rem;
+  }
+  .buttons-container a {
+    font-size: 2rem;
+  }
 }
