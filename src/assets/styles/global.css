@@ -58,6 +58,5 @@ textarea {
 @media (max-width: 500px) {
   :root {
     font-size: 62.5%;
-    color: blue;
   }
 }
