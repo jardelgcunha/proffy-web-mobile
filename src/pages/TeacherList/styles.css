@@ -3,48 +3,6 @@
   height: 100vh;
 }
 
-.page-header {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--color-primary);
-}
-
-.page-header .top-bar-container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: var(--color-text-in-primary);
-  padding: 1.6rem 0;
-}
-
-.page-header .top-bar-container a {
-  height: 3.2rem;
-  transition: opacity 0.2s;
-}
-
-.page-header .top-bar-container a:hover {
-  opacity: 0.6;
-}
-
-.page-header .top-bar-container > img {
-  height: 1.6rem;
-}
-
-.page-header .header-content {
-  width: 90%;
-  margin: 0 auto;
-  position: relative;
-  margin: 3.2rem auto;
-}
-
-.page-header .header-content strong {
-  font: 700 3.6rem Archivo;
-  line-height: 4.2rem;
-  color: var(--color-title-in-primary);
-}
-
 #search-teachers {
   margin-top: 3.2rem;
 }
@@ -55,6 +13,7 @@
 
 #search-teachers .input-block {
   position: relative;
+  /* width: 14rem; */
 }
 
 #search-teachers .input-block + .input-block {
@@ -88,9 +47,18 @@
   bottom: 0;
 }
 
+#page-teacher-list main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
 @media (min-width: 700px) {
   #page-teacher-list {
     max-width: 100%;
+  }
+
+  .page-header .header-content {
+    max-width: 600px;
   }
 
   #search-teachers {
@@ -98,16 +66,55 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 16px;
     position: absolute;
-    bottom: -44px;
+    bottom: -28px;
   }
 
   #search-teachers .input-block + .input-block {
     margin-top: 0rem;
+  }
+
+  #page-teacher-list main {
+    padding: 3.2rem 0;
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 600px) {
   #page-teacher-list {
     max-width: 100% !important;
+  }
+}
+
+@media (max-width: 699px) {
+  .page-header .top-bar-container {
+    padding: 0.3rem 0;
+  }
+  .page-header .header-content {
+    /* margin: 1.4rem auto; */
+    /* margin-top: 0rem; */
+    margin-top: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-header .header-content strong {
+    font: 700 2.6rem Archivo;
+  }
+
+  #search-teachers {
+    margin-top: 1.7rem;
+  }
+
+  #search-teachers .input-block input {
+    height: 4.6rem;
+    margin-top: 0.8rem;
+  }
+
+  #page-teacher-list main {
+    margin: 2.7rem auto;
+  }
+
+  .teacher-item header {
+    padding: 3rem 2rem;
   }
 }
