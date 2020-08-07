@@ -1,120 +1,106 @@
 #page-teacher-list {
-  width: 100vw;
-  height: 100vh;
+	width: 100vw;
+	height: 100vh;
 }
 
 #search-teachers {
-  margin-top: 3.2rem;
+	margin-top: 3.2rem;
 }
 
 #search-teachers label {
-  color: var(--color-text-in-primary);
+	color: var(--color-text-in-primary);
 }
 
 #search-teachers .input-block {
-  position: relative;
-  /* width: 14rem; */
+	position: relative;
+	/* width: 14rem; */
 }
 
 #search-teachers .input-block + .input-block {
-  margin-top: 1.4rem;
+	margin-top: 1.4rem;
 }
 
 #search-teachers .input-block label {
-  font-size: 1.4rem;
+	font-size: 1.4rem;
 }
 
 #search-teachers .input-block input {
-  width: 100%;
-  height: 5.6rem;
-  margin-top: 0.8rem;
-  border-radius: 0.8rem;
-  background: var(--color-input-background);
-  border: 1px solid var(--color-line-in-white);
-  outline: 0;
-  padding: 0 1.6rem;
-  font: 1.6rem Archivo;
+	width: 100%;
+	height: 5.6rem;
+	margin-top: 0.8rem;
+	border-radius: 0.8rem;
+	background: var(--color-input-background);
+	border: 1px solid var(--color-line-in-white);
+	outline: 0;
+	padding: 0 1.6rem;
+	font: 1.6rem Archivo;
 }
 
 #search-teachers .input-block:focus-within::after {
-  width: calc(100% - 3.2rem);
-  height: 2px;
-  content: "";
-  background: var(--color-primary-light);
-  position: absolute;
-  left: 1.6rem;
-  right: 1.6rem;
-  bottom: 0;
+	width: calc(100% - 3.2rem);
+	height: 2px;
+	content: "";
+	background: var(--color-primary-light);
+	position: absolute;
+	left: 1.6rem;
+	right: 1.6rem;
+	bottom: 0;
 }
 
 #page-teacher-list main {
-  margin: 3.2rem auto;
-  width: 90%;
+	margin: 3.2rem auto;
+	width: 90%;
 }
 
 @media (min-width: 700px) {
-  #page-teacher-list {
-    max-width: 100%;
-  }
+	#page-teacher-list {
+		max-width: 100%;
+	}
 
-  .page-header .header-content {
-    max-width: 600px;
-  }
+	.page-header .header-content {
+		max-width: 600px;
+	}
 
-  #search-teachers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 16px;
-    position: absolute;
-    bottom: -28px;
-  }
+	#search-teachers {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 16px;
+		position: absolute;
+		bottom: -28px;
+	}
 
-  #search-teachers .input-block + .input-block {
-    margin-top: 0rem;
-  }
+	#search-teachers .input-block + .input-block {
+		margin-top: 0rem;
+	}
 
-  #page-teacher-list main {
-    padding: 3.2rem 0;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 600px) {
-  #page-teacher-list {
-    max-width: 100% !important;
-  }
+	#page-teacher-list main {
+		padding: 3.2rem 0;
+		max-width: 600px;
+		margin: 0 auto;
+	}
 }
 
 @media (max-width: 699px) {
-  .page-header .top-bar-container {
-    padding: 0.3rem 0;
-  }
-  .page-header .header-content {
-    /* margin: 1.4rem auto; */
-    /* margin-top: 0rem; */
-    margin-top: 1.2rem;
-    margin-bottom: 2rem;
-  }
+	#search-teachers {
+		margin-top: 1.7rem;
+	}
 
-  .page-header .header-content strong {
-    font: 700 2.6rem Archivo;
-  }
+	#search-teachers .input-block input {
+		height: 4.6rem;
+		margin-top: 0.8rem;
+	}
 
-  #search-teachers {
-    margin-top: 1.7rem;
-  }
+	#page-teacher-list main {
+		margin: 2.7rem auto;
+	}
 
-  #search-teachers .input-block input {
-    height: 4.6rem;
-    margin-top: 0.8rem;
-  }
+	.teacher-item header {
+		padding: 3rem 2rem;
+	}
+}
 
-  #page-teacher-list main {
-    margin: 2.7rem auto;
-  }
-
-  .teacher-item header {
-    padding: 3rem 2rem;
-  }
+@media (max-width: 600px) {
+	#page-teacher-list {
+		max-width: 100% !important;
+	}
 }
