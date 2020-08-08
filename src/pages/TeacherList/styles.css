@@ -36,7 +36,7 @@
 	}
 
 	.page-header .header-content {
-		max-width: 600px;
+		max-width: 700px;
 	}
 
 	#search-teachers {
@@ -47,13 +47,15 @@
 		bottom: -28px;
 	}
 
-	#search-teachers .input-block + .input-block {
+	#search-teachers .input-block + .input-block,
+	#search-teachers .select-block + .select-block {
+		margin-top: 0rem;
 		margin-top: 0rem;
 	}
 
 	#page-teacher-list main {
 		padding: 3.2rem 0;
-		max-width: 600px;
+		max-width: 700px;
 		margin: 0 auto;
 	}
 }
