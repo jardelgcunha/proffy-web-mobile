@@ -11,7 +11,7 @@
 - Day 4: Up to 2 years in 2 months - Aug. 6th :heavy_check_mark:
 - Day 5: Extra mile - Aug. 7th :heavy_check_mark:
 
-## App Features
+## :up: App Features
 - Each teacher creates a class and makes his availability available;
 - Favorite classes (only mobile);
 - List classes for subject, day of week and time; 
