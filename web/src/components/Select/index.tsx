@@ -1,4 +1,4 @@
-import React, { SelectHTMLAttributes } from "react";
+import React, { SelectHTMLAttributes } from 'react';
 
 import "./styles.css";
 
