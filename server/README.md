@@ -1,14 +1,15 @@
-<!-- Casos de uso da aplicação -->
+<!-- Application use cases -->
 
-# Funcionalidades
+# Functionalities
 
-## Conexões
+## Connections
 
-- Rota para listar o total de conexões realizadas;
-- Rota para criar uma nova conexão;
+- Route to list the total connections made;
 
-## Aulas
+Route to create a new connection;
 
-- Rota para criar uma aula;
-- Rota para listar aulas;
-  - Filtrar por matéria, dia da semana e horário;
+## Classes
+
+- Route to create a class;
+- Route to list classes;
+  - Filter by subject, day of the week and time;
