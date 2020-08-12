@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
+import { Request, Response } from 'express';
 
-import db from "../database/connection";
-import convertHourToMinutes from "../utils/convertHourToMinutes";
+import db from '../database/connection';
+import convertHourToMinutes from '../utils/convertHourToMinutes';
 
 interface ScheduleItem {
 	week_day: number;
@@ -19,32 +19,32 @@ export default class ClassesController {
 
 		if (!filters.week_day || !filters.subject || !filters.time) {
 			return response.status(400).json({
-				error: "Missing filters to search classes",
+				error: 'Missing filters to search classes',
 			});
 		}
 
 		const timeInMinutes = convertHourToMinutes(time);
 		// console.log(timeInMinutes);
 
-		// const class_schedule = await db("class_schedule")
-		// 	.where("class_schedule.week_day", "=", week_day)
-		// 	.join("classes", "class_schedule.class_id", "=", "classes.id")
-		// 	.select(["class_schedule.*", "classes.*"]);
+		// const class_schedule = await db('class_schedule')
+		// 	.where('class_schedule.week_day', '=', week_day)
+		// 	.join('classes', 'class_schedule.class_id', '=', 'classes.id')
+		// 	.select(['class_schedule.*', 'classes.*']);
 		// return response.json(class_schedule);
 
-		const classes = await db("classes")
+		const classes = await db('classes')
 			// subquery
 			.whereExists(function () {
-				this.select("class_schedule.*")
-					.from("class_schedule")
-					.whereRaw("`class_schedule`.`class_id` = `classes`.`id`")
-					.whereRaw("`class_schedule`.`week_day` = ??", [Number(week_day)])
-					.whereRaw("`class_schedule`.`from` <= ??", [timeInMinutes])
-					.whereRaw("`class_schedule`.`to` > ??", [timeInMinutes]);
+				this.select('class_schedule.*')
+					.from('class_schedule')
+					.whereRaw('`class_schedule`.`class_id` = `classes`.`id`')
+					.whereRaw('`class_schedule`.`week_day` = ??', [Number(week_day)])
+					.whereRaw('`class_schedule`.`from` <= ??', [timeInMinutes])
+					.whereRaw('`class_schedule`.`to` > ??', [timeInMinutes]);
 			})
-			.where("classes.subject", "=", subject)
-			.join("users", "classes.user_id", "=", "users.id")
-			.select(["classes.*", "users.*"]);
+			.where('classes.subject', '=', subject)
+			.join('users', 'classes.user_id', '=', 'users.id')
+			.select(['classes.*', 'users.*']);
 
 		return response.json(classes);
 	}
@@ -63,7 +63,7 @@ export default class ClassesController {
 		const trx = await db.transaction();
 
 		try {
-			const insertedUsersIds = await trx("users").insert({
+			const insertedUsersIds = await trx('users').insert({
 				name,
 				avatar,
 				whatsapp,
@@ -72,7 +72,7 @@ export default class ClassesController {
 
 			const user_id = insertedUsersIds[0];
 
-			const insertedClassesIds = await trx("classes").insert({
+			const insertedClassesIds = await trx('classes').insert({
 				subject,
 				cost,
 				user_id,
@@ -89,7 +89,7 @@ export default class ClassesController {
 				};
 			});
 
-			await trx("class_schedule").insert(classSchedule);
+			await trx('class_schedule').insert(classSchedule);
 
 			await trx.commit();
 
@@ -98,7 +98,7 @@ export default class ClassesController {
 			await trx.rollback();
 
 			return response.status(400).json({
-				error: "Unexoected error while creating new class",
+				error: 'Unexpected error while creating new class',
 			});
 		}
 	}

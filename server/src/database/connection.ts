@@ -1,12 +1,12 @@
-import knex from "knex";
-import path from "path";
+import knex from 'knex';
+import path from 'path';
 
 // migrations - control the database version
 
 const db = knex({
-	client: "sqlite3",
+	client: 'sqlite3',
 	connection: {
-		filename: path.resolve(__dirname, "database.sqlite"),
+		filename: path.resolve(__dirname, 'database.sqlite'),
 	},
 	useNullAsDefault: true,
 });
