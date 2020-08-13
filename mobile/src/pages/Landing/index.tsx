@@ -3,7 +3,7 @@ import { View, Image, Text, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { RectButton } from 'react-native-gesture-handler';
 
-import styles from './styles'
+import styles from './styles';
 
 import landingImg from '../../assets/images/landing.png';
 import studyIcon from '../../assets/images/icons/study.png';
@@ -18,7 +18,7 @@ function Landing() {
     }
 
     function handleNavigateToStudyPages() {
-        navigate('Study')
+        navigate('Study');
     }
 
     return (
