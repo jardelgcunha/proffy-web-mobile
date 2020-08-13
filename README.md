@@ -93,8 +93,10 @@ Feel free to **file a new issue** with a respective title and description on the
 
 
 # :memo: License
+Released in 2020 closed_book
+
 This project is under the MIT license. See the [LICENSE](LICENSE.md) for more details.
 
----
+Made with :green_heart: by Jardel Cunha.
 
-Made by Jardel Cunha according to the NLW #2 classes by [Rocketseat](https://rocketseat.com.br/)
+Give :star: if this project helped you!
