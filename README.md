@@ -88,11 +88,8 @@ git push origin my-feature;
 ```
 After the merge of your pull request is done, you can delete a branch of yours.
 
-:star: You can also give the project a star
-
 # :wrench: Issues
 Feel free to **file a new issue** with a respective title and description on the the [Proffy](https://github.com/JardelDeveloper/proffy-nlw-rocketseat/issues) repository. If you already found a solution to your problem, **I would love to review your pull request**.
-
 
 # :memo: License
 Released in 2020 :closed_book:
