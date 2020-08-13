@@ -1,8 +1,10 @@
+# Proffy (Web and Mobile) #
+
 <h1 align="center">
     <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/logo.svg" width="250px" />
 </h1>
 
-> :rocket: Project made to connect teachers to students, made in Next Level Week #2 [Rocketseat](https://rocketseat.com.br/)
+> :computer: Made to connect teachers to students, made in Next Level Week #2 [Rocketseat](https://rocketseat.com.br/)
 
 ## 🚀 Stacks
 This project was developed with the following technologies:
@@ -93,7 +95,7 @@ Feel free to **file a new issue** with a respective title and description on the
 
 
 # :memo: License
-Released in 2020 closed_book
+Released in 2020 :closed_book:
 
 This project is under the MIT license. See the [LICENSE](LICENSE.md) for more details.
 
