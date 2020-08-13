@@ -4,21 +4,6 @@
 
 > :rocket: Project made to connect teachers to students, made in Next Level Week #2 [Rocketseat](https://rocketseat.com.br/)
 
-## :calendar: Week: 
-- Day 1: Accelerating its evolution - Aug. 3th :heavy_check_mark:
-- Day 2: Looking for opportunities - Aug. 4h :heavy_check_mark:
-- Day 3: Stack's choice - Aug. 5th :heavy_check_mark:
-- Day 4: Up to 2 years in 2 months - Aug. 6th :heavy_check_mark:
-- Day 5: Extra mile - Aug. 7th :heavy_check_mark:
-
-## :up: App Features
-- Each teacher creates a class and makes his availability available;
-- Favorite classes (only mobile);
-- List classes for subject, day of week and time; 
- Rota para listar o total de conexões realizadas;
-- Create a new connection every time the student contacts the teacher via Whatsapp;
-- List all connections on the landing page.
-
 ## 🚀 Stacks
 This project was developed with the following technologies:
 
@@ -39,6 +24,14 @@ Tools & Utilities included:
 - [ESLint](https://eslint.org/docs/user-guide/getting-started)
 - [Expo Google Fonts](https://github.com/expo/google-fonts)
 
+## :up: App Features
+- Each teacher creates a class and makes his availability available;
+- Favorite classes (only mobile);
+- List classes for subject, day of week and time; 
+ Rota para listar o total de conexões realizadas;
+- Create a new connection every time the student contacts the teacher via Whatsapp;
+- List all connections on the landing page.
+
 # :construction_worker: How to run?
 ```bash
 git clone https://github.com/JardelDeveloper/proffy-nlw-rocketseat.git
@@ -57,7 +50,7 @@ Once [Insomnia](https://insomnia.rest/download/core/?&ref=https%3A%2F%2Fwww.goog
 
 Go to http://localhost:3333/ to see the API application's response.
 
-# :computer: Run web app(Frontend)
+# :computer: Run Web App (Frontend)
 ```bash
 # Access the directory 
 $ cd proffy-nlw-rocketseat/web
@@ -68,7 +61,7 @@ $ yarn start
 ```
 Go to http://localhost:3000/ to see the web application's response.
 
-# :iphone: Run mobile app
+# :iphone: Run Mobile App
 ```bash
 # Install expo-cli globally
 $ yarn global add expo-cli 
