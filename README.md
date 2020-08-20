@@ -1,7 +1,7 @@
 # Proffy (Web and Mobile)
 
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/teste1.svg" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/logo.svg" width="250px" />
 </h1>
 
 > :computer: Made to connect teachers to students, made in Next Level Week #2 [Rocketseat](https://rocketseat.com.br/)
