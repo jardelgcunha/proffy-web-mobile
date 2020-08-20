@@ -1,7 +1,7 @@
 # Proffy (Web and Mobile)
 
 <h1 align="center">
-    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/logo.svg" width="250px" />
+    <img alt="NextLevelWeek" title="#NextLevelWeek" src=".github/teste1.svg" width="250px" />
 </h1>
 
 > :computer: Made to connect teachers to students, made in Next Level Week #2 [Rocketseat](https://rocketseat.com.br/)
@@ -32,7 +32,6 @@ Tools & Utilities included:
 - Each teacher creates a class and makes his availability available;
 - Favorite classes (only mobile);
 - List classes for subject, day of week and time;
-  Rota para listar o total de conexões realizadas;
 - Create a new connection every time the student contacts the teacher via Whatsapp;
 - List all connections on the landing page.
 
